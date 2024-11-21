@@ -1,0 +1,37 @@
+.example-card {
+    max-width: 500px;
+    margin-bottom: 16px; /* Aumentar espacio entre tarjetas */
+    background-color: rgb(0, 255, 128); /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación para hover */
+
+    &:hover {
+        transform: translateY(-4px); /* Efecto de levantar la tarjeta al pasar el mouse */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa en hover */
+    }
+
+    .mat-card-header {
+        background-color: rgba(0, 255, 128, 0.1); /* Fondo suave para el encabezado */
+        padding: 16px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .mat-card-title {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .mat-card-subtitle {
+        font-size: 1em;
+        color: rgba(0, 0, 0, 0.6); /* Color más suave para el subtítulo */
+    }
+
+    .mat-card-content {
+        padding: 16px;
+        font-size: 1em;
+        color: rgba(0, 0, 0, 0.8); /* Color más oscuro para el contenido */
+    }
+}
+
